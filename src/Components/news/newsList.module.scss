@@ -1,0 +1,17 @@
+.news-content{
+    a{
+      color: black;
+    }
+    .list{
+      li{
+        margin-top: 20px;
+      }
+      div{
+        margin-top: 10px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px 2px rgba(0,0,0,.2);
+        padding: 20px;
+      }
+    }
+  }

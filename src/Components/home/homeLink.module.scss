@@ -1,0 +1,19 @@
+/* 友情链接 */
+.home_link{
+    margin-top: 30px;
+    padding: 20px;
+    background: #404040;
+    color: white;
+    line-height: 2;
+    background-image: url('/img/true.jpg');
+    background-size: 30%;
+    box-sizing: border-box;
+    a{
+      margin-left: 20px;
+      font-weight: 100;
+      color: #eee;
+      &:hover{
+        color: #0890e1;
+      }
+    }
+  }

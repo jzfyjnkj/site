@@ -1,0 +1,49 @@
+/* 新闻 */
+.home_news{
+  margin-top: 30px;
+  h2 a{
+    position: initial;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+  }
+  .wrap{
+    strong{
+      border-left: 6px solid;
+      padding-left: 10px;
+      font-size: 24px;
+      color: #0890e1;
+      a{
+        color: #0890e1;
+      }
+    }
+    li{
+      float: left;
+      width: calc(100% / 3);
+      // height: 300px;
+      // background: #eee;
+      padding: 20px;
+      box-sizing: border-box;
+      line-height: 2;
+      h2{
+        border-bottom: 1px dashed;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+      }
+      .timer{
+        text-align: right;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .home_news{
+    .wrap li {
+      width: 100%;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}

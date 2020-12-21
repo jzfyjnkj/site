@@ -1,0 +1,118 @@
+// 导航栏
+.navigation_bar{
+    background-image: url('/img/keji2.png');
+    background-size: 100%;
+    background-color: #404040;
+    color: white;
+    height: 60px;
+    // z-index: 999;
+    position: relative;
+    a{
+      color: white;
+    }
+    .wrap{
+      height: 100%;
+    }
+    .logo{
+      height: 100%;
+      padding: 5px 0;
+      box-sizing: border-box;
+      img{
+        height: 80%;
+      } 
+    }
+    .nav{
+      width: 76%;
+      font-size: 16px;
+      font-weight: 700;
+      li{
+        text-align: center;
+      }
+      > li{
+        float: left;
+        line-height: 60px;
+        width: calc(100% / 7);
+        background: rgba(0, 0, 0, 0.178);
+        cursor: pointer;
+        position: relative;
+        ul{
+          display: none;
+          position: absolute;
+          width: 100%;
+          background: rgba(0,0,0,.4);
+          li{
+            width: 100%;
+            &:hover{
+              background: #0890e1;
+            }
+          }
+        }
+        &:hover{
+          ul{
+            display: block;
+          }
+        }
+        a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      li.active {
+        background: #0890e1;
+      }
+    }
+    i{
+      position: absolute;
+      top: 6px;
+      right: 20px;
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .mask{
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,.6);
+      padding-top: 60px;
+      transform: translateY(-100%);
+      transition: transform .4s;
+      li{
+        padding: 0 90px;
+        text-align: center;
+        line-height: 40px;
+        a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px solid;
+        }
+        &.active a{
+          background: #0890e1;
+        }
+      }
+      i{
+        top: 20px;
+      }
+      &.active{
+        transform: translateY(0);
+      }
+    }
+    z-index: 999;
+  
+  }
+  @media (max-width: 768px) {
+    .navigation_bar{
+      height: 50px;
+      .nav{
+        display: none;
+      }
+      i{
+        display: inline-block;
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }

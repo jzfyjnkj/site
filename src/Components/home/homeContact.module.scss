@@ -1,0 +1,75 @@
+/* 选择釜源 */
+.home_contact{
+    margin-top: 60px;
+    background-image: url('/img/space.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    position: relative;
+    color: white;
+    .mask{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .6);
+    }
+    .wrap{
+      position: relative;
+      .img{
+        width: 340px;
+        height: 340px;
+        border-radius: 50%;
+        overflow: hidden;
+        transform: translateY(-10%);
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .box{
+        position: absolute;
+        top: 50%; left: 0;
+        transform: translateY(-50%);
+        .title{
+          font-size: 38px;
+        }
+        .text{
+          strong{
+            font-size: 32px;
+          }
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 996px) {
+  .home_contact{
+    .wrap{
+      .img{
+        width: 30vw; 
+        height: 30vw;
+        transform: translateY(-20%); 
+      }
+      .box{
+        padding-left: 5px;
+        .title{
+          font-size: 4vw;
+        }
+        .text{
+          font-size: 3vw;
+          strong{
+            font-size: 5vw;
+          }
+        }
+      }
+    }
+  }
+  }
+  @media (max-width: 540px) {
+    .home_contact{
+      .wrap .img{
+        border-radius: 0;
+      }
+    }
+  }

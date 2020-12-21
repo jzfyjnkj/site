@@ -1,0 +1,34 @@
+header{
+    font-size: 14px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    h1{
+      display: inline-block;
+      font-size: 14px;
+      font-weight: initial;
+    }
+    .fr{
+      span, a{
+        vertical-align: middle;
+      }
+      a{
+        font-weight: 700;
+        color: #E6A23C;
+        font-size: 18px;
+        letter-spacing:1px;
+      }
+    }
+}
+@media (max-width: 768px) {
+    header {
+      span{
+        display: none;
+      }
+      .fl a{
+        font-size: 14px;
+      }
+      .fr a{
+        font-size: 18px;
+      }
+    }
+}

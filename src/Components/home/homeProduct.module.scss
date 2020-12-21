@@ -1,0 +1,118 @@
+.home_product{
+    margin-top: 30px;
+    > strong{
+      border-left: 6px solid;
+      padding-left: 8px;
+      font-size: 24px;
+      color: #0890e1;
+      a{
+        margin-top: 12px;
+        font-weight: 100;
+        font-size: 16px;
+      }
+    }
+    .more{
+      display: none;
+      margin-top: 14px;
+      text-align: center;
+      cursor: pointer;
+    }
+    li{
+      float: left;
+      width: 25%;
+      transition: transform .8s;
+      padding: 10px;
+      box-sizing: border-box;
+      > span{
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        border: 1px solid #ddd;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        img{
+          width:80%;
+          transition: transform .4s;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          top: 12px; right: 12px;
+          width: 100px;
+          height: 60px;
+          // background-image: url('../assets/logo.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+        .mask{
+          height: 30px;
+          background: #0890e1;
+          transition: transform .4s;
+          color: white;
+          line-height: 30px;
+          text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0 5px;
+        }
+        a{
+          position: relative;
+          height:100%;
+          width: 100%;
+          color: white;
+          white-space: nowrap;
+          &::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: white;
+            bottom: -2px;
+            left: 0;
+            transition: width .4s;
+          }
+        }
+        will-change: transform;
+        &:hover{
+          & img{
+            transform: scale(1.1);
+          }
+          & a::after{
+            width: 100%;
+          }
+        }
+      }
+      span.content{
+        line-height: 1.8;
+        padding-top: 15px;
+        text-align: center;
+        h2{
+          margin-top: 20px;
+        }
+        a{
+          padding: 3px 5px;
+          background: #409EFF;
+          color: white;
+          border-radius: 3px;
+        }
+      }
+    }
+}
+@media (max-width: 1200px) {
+  .home_product li{
+    width: 100% / 3;
+  }
+}
+@media (max-width: 768px) {
+  .home_product{
+    li{
+      padding: 2px;
+      width: 50%;
+    }
+    .more{
+      display: block;
+    }
+  } 
+}
