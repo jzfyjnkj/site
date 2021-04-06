@@ -19,9 +19,7 @@ const Article = ({ list, text, title }: any) => {
     
     return (<div>
         <Head>
-			<title>{title}</title>
-			<meta name="keywords" content="电磁锅炉,电锅炉,电磁热风炉,蒸汽发生器,空压机余热回收"/>
-			<meta name="description" content="晋中釜源科技主要从事变频电磁锅炉，电磁热风炉，电蒸汽发生器，空压机余热回收，矿井令凝水余热回收的研发、生产、销售及售后为一体的节能环保公司"/>
+			<title>{title}_釜源节能科技</title>
 		</Head>
         <div className='leayer' style={{maxWidth: '1200px', marginTop: '20px'}}
             dangerouslySetInnerHTML={{__html: text}}

@@ -21,6 +21,3 @@ const App = ({Component, pageProps}: any) => {
 }
 export default App;
 
-export function getServerSideProps () {
-    console.log(1234567)
-}

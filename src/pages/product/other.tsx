@@ -12,7 +12,6 @@ const Product = ({list}: any) => {
       <Head>
         <title>产品中心_瓦斯发电机余热回收_气体余热回收</title>
         <meta name="keywords" content="电磁锅炉,电锅炉,电磁热风炉,蒸汽发生器,空压机余热回收"/>
-        <meta name="description" content="晋中釜源科技主要从事变频电磁锅炉，电磁热风炉，电蒸汽发生器，空压机余热回收，矿井令凝水余热回收的研发、生产、销售及售后为一体的节能环保公司"/>
       </Head>
     <ProductBtn />
     
